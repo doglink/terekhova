@@ -21,8 +21,14 @@
   </div>
 
    
-<div style="padding-top: 5%" class="poster" buy-button-id="buy_btn_1OJg2gA32lIsuDyk4NDGWLK5"
-  publishable-key="pk_live_51OJfb0A32lIsuDykYstvoEkqCpN1uP8aB0RFtoRW9ph4fs6JDMEw58c1aJCptOsQaHnQYIRIeExo1BC6BriFiaVr00fpc2AVA7">
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<div style="padding-top: 5%" class="poster" 
+  buy-button-id="buy_btn_1OJg2gA32lIsuDyk4NDGWLK5"
+  publishable-key="pk_live_51OJfb0A32lIsuDykYstvoEkqCpN1uP8aB0RFtoRW9ph4fs6JDMEw58c1aJCptOsQaHnQYIRIeExo1BC6BriFiaVr00fpc2AVA7"
+>
 </div>
 
   
@@ -61,6 +67,12 @@
   img {
     max-width: 100%;
     max-height: 100%;
+}
+
+  @media screen only and (min-device-width:800px) {
+  .img {
+    max-width: 30%;
+  }
 }
 
   .name {
